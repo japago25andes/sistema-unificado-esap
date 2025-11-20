@@ -69,21 +69,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 title: 'Dashboard Principal',
                 subtitle: 'Resumen general del sistema'
             },
+            'documental': {
+                title: 'Gestión Documental',
+                subtitle: 'Sistema integral de gestión documental'
+            },
+            'rendicion': {
+                title: 'Rendición de Cuentas',
+                subtitle: 'Transparencia e información ciudadana'
+            },
+            'acreditacion': {
+                title: 'Acreditación Institucional',
+                subtitle: 'Gestión del proceso de acreditación y calidad'
+            },
             'personal': {
                 title: 'Gestión de Personal',
                 subtitle: 'Administración de recursos humanos'
             },
-            'academico': {
-                title: 'Gestión Académica',
-                subtitle: 'Administración de programas y estudiantes'
+            'reportes': {
+                title: 'Centro de Reportes',
+                subtitle: 'Generación y análisis de reportes institucionales'
             },
-            'administrativo': {
-                title: 'Gestión Administrativa',
-                subtitle: 'Procesos administrativos internos'
-            },
-            'financiero': {
-                title: 'Gestión Financiera',
-                subtitle: 'Control financiero y presupuestario'
+            'transparencia': {
+                title: 'Transparencia y Acceso a la Información',
+                subtitle: 'Cumplimiento normativo y gobierno abierto'
             },
             'investigacion': {
                 title: 'Gestión de Investigación',
@@ -556,5 +564,5 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.head.appendChild(dynamicStyles);
     
-    console.log('Sistema de Información Unificado ESAP - Inicializado correctamente');
+    console.log('INFESAP - Sistema de Información Unificado ESAP - Inicializado correctamente');
 });
