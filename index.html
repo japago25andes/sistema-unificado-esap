@@ -13,9 +13,9 @@
     <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <div class="logo">
-                <div class="logo-placeholder">
-                    <i class="fas fa-university"></i>
-                    <span>INFESAP</span>
+                <div class="logo-container">
+                    <img src="logo.png" alt="ESAP Logo" class="logo-image">
+                    <span class="logo-text">INFESAP</span>
                 </div>
             </div>
             <div class="sidebar-toggle" id="sidebarToggle">
@@ -68,6 +68,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="#interoperabilidad" class="nav-link" data-section="interoperabilidad">
+                        <i class="fas fa-network-wired"></i>
+                        <span>Interoperabilidad</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="#configuracion" class="nav-link" data-section="configuracion">
                         <i class="fas fa-cog"></i>
                         <span>Configuración</span>
@@ -82,8 +88,13 @@
         <!-- Header -->
         <header class="header">
             <div class="header-left">
-                <h1 class="page-title">Dashboard Principal</h1>
-                <p class="page-subtitle">INFESAP - Sistema de Información Unificado ESAP</p>
+                <div class="header-logo">
+                    <img src="logo.png" alt="ESAP Logo" class="header-logo-image">
+                </div>
+                <div class="header-titles">
+                    <h1 class="page-title">Dashboard Principal</h1>
+                    <p class="page-subtitle">INFESAP - Sistema de Información Unificado ESAP</p>
+                </div>
             </div>
             <div class="header-right">
                 <div class="search-box">
@@ -99,7 +110,7 @@
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="user-info">
-                        <span class="user-name">Administrador</span>
+                        <span class="user-name">ADRIANA PAOLA MARTINEZ </span>
                         <span class="user-role">Super Usuario</span>
                     </div>
                 </div>
@@ -1832,6 +1843,302 @@
             </div>
         </section>
 
+        <!-- Interoperabilidad Section -->
+        <section id="interoperabilidad" class="content-section">
+            <div class="section-header">
+                <h2><i class="fas fa-network-wired"></i> Interoperabilidad</h2>
+                <p>Integración con sistemas externos y plataformas de colaboración</p>
+            </div>
+
+            <div class="interoperability-dashboard">
+                <div class="integration-stats">
+                    <div class="stat-card active">
+                        <div class="stat-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>8</h3>
+                            <p>Sistemas Conectados</p>
+                        </div>
+                        <div class="stat-trend positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>100%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>1,247</h3>
+                            <p>Transacciones Hoy</p>
+                        </div>
+                        <div class="stat-trend positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+15%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>99.8%</h3>
+                            <p>Disponibilidad</p>
+                        </div>
+                        <div class="stat-trend positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>Óptima</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="integration-platforms">
+                    <h3 class="platforms-title">Plataformas Integradas</h3>
+                    <div class="platforms-grid">
+                        <!-- KLIC Integration -->
+                        <div class="platform-card featured">
+                            <div class="platform-header">
+                                <div class="platform-logo">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>KLIC</h4>
+                                    <p>Plataforma de Aprendizaje</p>
+                                </div>
+                                <div class="platform-status online">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Conectado</span>
+                                </div>
+                            </div>
+                            <div class="platform-content">
+                                <div class="platform-description">
+                                    <p>Sistema integrado de gestión de conocimiento y aprendizaje colaborativo para programas académicos de ESAP.</p>
+                                </div>
+                                <div class="platform-metrics">
+                                    <div class="metric">
+                                        <span class="metric-label">Cursos Sincronizados:</span>
+                                        <span class="metric-value">127</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Estudiantes Activos:</span>
+                                        <span class="metric-value">3,456</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Última Sincronización:</span>
+                                        <span class="metric-value">Hace 5 min</span>
+                                    </div>
+                                </div>
+                                <div class="platform-actions">
+                                    <a href="#" class="btn btn-primary" onclick="openKlicIntegration()">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Acceder a KLIC
+                                    </a>
+                                    <button class="btn btn-outline" onclick="syncKlic()">
+                                        <i class="fas fa-sync"></i>
+                                        Sincronizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Active Document Integration -->
+                        <div class="platform-card featured">
+                            <div class="platform-header">
+                                <div class="platform-logo">
+                                    <i class="fas fa-file-contract"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>Active Document</h4>
+                                    <p>Gestión Documental Avanzada</p>
+                                </div>
+                                <div class="platform-status online">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Conectado</span>
+                                </div>
+                            </div>
+                            <div class="platform-content">
+                                <div class="platform-description">
+                                    <p>Plataforma de gestión documental inteligente con capacidades de automatización y flujos de trabajo digitales.</p>
+                                </div>
+                                <div class="platform-metrics">
+                                    <div class="metric">
+                                        <span class="metric-label">Documentos Gestionados:</span>
+                                        <span class="metric-value">15,789</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Flujos Activos:</span>
+                                        <span class="metric-value">43</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Última Sincronización:</span>
+                                        <span class="metric-value">Hace 2 min</span>
+                                    </div>
+                                </div>
+                                <div class="platform-actions">
+                                    <a href="#" class="btn btn-primary" onclick="openActiveDocument()">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Acceder a Active Document
+                                    </a>
+                                    <button class="btn btn-outline" onclick="syncActiveDocument()">
+                                        <i class="fas fa-sync"></i>
+                                        Sincronizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Other Integrations -->
+                        <div class="platform-card">
+                            <div class="platform-header">
+                                <div class="platform-logo">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>SIGESU</h4>
+                                    <p>Sistema de Gestión Universitaria</p>
+                                </div>
+                                <div class="platform-status online">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Conectado</span>
+                                </div>
+                            </div>
+                            <div class="platform-actions">
+                                <button class="btn btn-outline btn-sm">
+                                    <i class="fas fa-cog"></i>
+                                    Configurar
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="platform-card">
+                            <div class="platform-header">
+                                <div class="platform-logo">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>Power BI</h4>
+                                    <p>Analítica y Reportes</p>
+                                </div>
+                                <div class="platform-status online">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Conectado</span>
+                                </div>
+                            </div>
+                            <div class="platform-actions">
+                                <button class="btn btn-outline btn-sm">
+                                    <i class="fas fa-cog"></i>
+                                    Configurar
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="platform-card">
+                            <div class="platform-header">
+                                <div class="platform-logo">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>Outlook 365</h4>
+                                    <p>Comunicaciones</p>
+                                </div>
+                                <div class="platform-status online">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Conectado</span>
+                                </div>
+                            </div>
+                            <div class="platform-actions">
+                                <button class="btn btn-outline btn-sm">
+                                    <i class="fas fa-cog"></i>
+                                    Configurar
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="platform-card">
+                            <div class="platform-header">
+                                <div class="platform-logo">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>SECOP II</h4>
+                                    <p>Contratación Pública</p>
+                                </div>
+                                <div class="platform-status online">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Conectado</span>
+                                </div>
+                            </div>
+                            <div class="platform-actions">
+                                <button class="btn btn-outline btn-sm">
+                                    <i class="fas fa-cog"></i>
+                                    Configurar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="integration-tools">
+                    <h3 class="tools-title">Herramientas de Integración</h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="tool-content">
+                                <h4>API Gateway</h4>
+                                <p>Gestión centralizada de APIs y endpoints</p>
+                                <div class="tool-stats">
+                                    <span class="stat">24 APIs activas</span>
+                                    <span class="status online">Online</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <div class="tool-content">
+                                <h4>OAuth Manager</h4>
+                                <p>Autenticación y autorización unificada</p>
+                                <div class="tool-stats">
+                                    <span class="stat">156 tokens activos</span>
+                                    <span class="status online">Online</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-stream"></i>
+                            </div>
+                            <div class="tool-content">
+                                <h4>Data Pipeline</h4>
+                                <p>Flujos de datos en tiempo real</p>
+                                <div class="tool-stats">
+                                    <span class="stat">12 pipelines activos</span>
+                                    <span class="status online">Online</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="tool-content">
+                                <h4>Event Hub</h4>
+                                <p>Centro de notificaciones y eventos</p>
+                                <div class="tool-stats">
+                                    <span class="stat">89 eventos hoy</span>
+                                    <span class="status online">Online</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Configuración Section -->
         <section id="configuracion" class="content-section">
             <div class="section-header">
@@ -1877,6 +2184,50 @@
             </div>
         </section>
     </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chatbot-info">
+                <h4>Asistente INFESAP</h4>
+                <p>En línea</p>
+            </div>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>¡Hola! Soy el asistente virtual de INFESAP. ¿En qué puedo ayudarte hoy?</p>
+                    <span class="message-time">Ahora</span>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-suggestions">
+            <button class="suggestion-btn" data-message="¿Cómo accedo a mis documentos?">📄 Acceso a documentos</button>
+            <button class="suggestion-btn" data-message="¿Cómo puedo ver los reportes?">📊 Ver reportes</button>
+            <button class="suggestion-btn" data-message="¿Dónde encuentro información de transparencia?">👁️ Transparencia</button>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotInput" placeholder="Escribe tu mensaje...">
+            <button id="chatbotSend">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbotToggle">
+        <i class="fas fa-comments"></i>
+        <span class="notification-badge">1</span>
+    </button>
 
     <script src="script.js"></script>
 </body>
